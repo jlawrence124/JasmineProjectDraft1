@@ -31,7 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-         it('should make sure the feed URLs are not empty', function() {
+         it('URLs are not empty', function() {
              for (i = 0; i < allFeeds.length; i++) {
                  expect(allFeeds[i].url).toBeDefined();
                  expect(allFeeds[i].url.length).not.toBe(0);
@@ -43,7 +43,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-         it('should make sure the feed names are not empty', function() {
+         it('names are not empty', function() {
              for (i = 0; i < allFeeds.length; i++) {
                  expect(allFeeds[i].name).toBeDefined();
                  expect(allFeeds[i].name.length).not.toBe(0);
@@ -94,10 +94,8 @@ $(function() {
           it('should show/hide when the menu icon is clicked', function() {
               if (clicked === true) {
                   expect(bodyClass).toBe("undefined");
-                  console.log("menu is showing");
               } else {
                   expect(bodyClass).toBe("menu-hidden");
-                  console.log("menu is hiding");
               };
           });
     });
